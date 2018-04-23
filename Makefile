@@ -110,6 +110,19 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named Kraken
+
+# Build rule for target.
+Kraken: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Kraken
+.PHONY : Kraken
+
+# fast build rule for target.
+Kraken/fast:
+	$(MAKE) -f CMakeFiles/Kraken.dir/build.make CMakeFiles/Kraken.dir/build
+.PHONY : Kraken/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Kraken"
 .PHONY : help
 
 

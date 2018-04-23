@@ -1,6 +1,6 @@
 #pragma once
 #ifndef kraken_optimizer__hpp
-#define kraken_optimizer_hpp
+#define kraken_optimizer__hpp
 
 namespace kraken {
 	

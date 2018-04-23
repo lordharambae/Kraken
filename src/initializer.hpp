@@ -1,6 +1,6 @@
 #pragma once
-#ifndef kraken_initializer__hpp
-#define kraken_initializer__hpp
+#ifndef kraken_initializer__hpp_
+#define kraken_initializer__hpp_
 
 namespace kraken {
 

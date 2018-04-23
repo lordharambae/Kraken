@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /Users/ksl/Desktop/Kraken
 CMAKE_BINARY_DIR = /Users/ksl/Desktop/Kraken
 
 #=============================================================================
+# Target rules for target CMakeFiles/Kraken.dir
+
+# All Build rule for target.
+CMakeFiles/Kraken.dir/all:
+	$(MAKE) -f CMakeFiles/Kraken.dir/build.make CMakeFiles/Kraken.dir/depend
+	$(MAKE) -f CMakeFiles/Kraken.dir/build.make CMakeFiles/Kraken.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ksl/Desktop/Kraken/CMakeFiles --progress-num= "Built target Kraken"
+.PHONY : CMakeFiles/Kraken.dir/all
+
+# Include target in all.
+all: CMakeFiles/Kraken.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Kraken.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ksl/Desktop/Kraken/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Kraken.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ksl/Desktop/Kraken/CMakeFiles 0
+.PHONY : CMakeFiles/Kraken.dir/rule
+
+# Convenience name for target.
+Kraken: CMakeFiles/Kraken.dir/rule
+
+.PHONY : Kraken
+
+# clean rule for target.
+CMakeFiles/Kraken.dir/clean:
+	$(MAKE) -f CMakeFiles/Kraken.dir/build.make CMakeFiles/Kraken.dir/clean
+.PHONY : CMakeFiles/Kraken.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Kraken.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

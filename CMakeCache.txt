@@ -131,7 +131,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=Kraken
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -191,6 +191,15 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
+
+//Value Computed by CMake
+Kraken_BINARY_DIR:STATIC=/Users/ksl/Desktop/Kraken
+
+//Dependencies for target
+Kraken_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+Kraken_SOURCE_DIR:STATIC=/Users/ksl/Desktop/Kraken
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/Users/ksl/Desktop/Kraken

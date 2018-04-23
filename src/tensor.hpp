@@ -10,9 +10,9 @@ class tensor {
 public:
 
 	tensor();
-	explicit tensor();
-	tensor(const tensor<T>&)
-	tensor(tensor<T>&&)
+	// explicit tensor();
+	tensor(const tensor<T>&);
+	tensor(tensor<T>&&);
 	tensor<T>& operator=(const tensor<T>&);
 	tensor<T>& operator=(tensor<T>&&);
 	~tensor();
