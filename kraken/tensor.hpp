@@ -4,7 +4,7 @@
 
 namespace kraken {
 	
-template <class T, unsigned long long int C = 4ull>
+template <class T>
 class tensor {
 
 	typedef unsigned long long int size_t;
@@ -15,25 +15,21 @@ class tensor {
 
 	inline const void allocate();
 
-	size_t __capacity = C;
+	size_t __capacity = 4;
 	size_t __size;
 	iterator __buffer;
 
 public:
 
 	tensor() noexcept;
-	explicit tensor(const size_t&);
-	tensor(const iterator, const iterator);
+	explicit tensor(const size_t&, const value_t& = value_t());
+	tensor(iterator, iterator);
 	tensor(const tensor_t&);
 	tensor(tensor_t&&) noexcept;
 	tensor_t& operator=(const tensor_t&);
 	tensor_t& operator=(tensor_t&&) noexcept;
 	~tensor();
 
-	void resize(const size_t&);
-	void reserve(const size_t&);
-	void fill(const value_t&);
-	void swap(tensor_t&, tensor_t&);
 
 	iterator begin() noexcept;
 	const iterator begin() const noexcept;
@@ -44,10 +40,9 @@ public:
 	constexpr size_t capacity() const noexcept;
 	constexpr bool empty() const noexcept;
 
-	reference operator[](const size_t&);
-	constexpr reference operator[](const size_t&) const;
-	reference at(const size_t&);
-	constexpr reference at(const size_t&) const;
+	void fill(const value_t&);
+	constexpr reference get(const size_t&) const;
+	reference set(const size_t&);
 
 	reference front();
 	constexpr reference front() const;
